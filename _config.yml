@@ -1,0 +1,74 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://www.fanxl.top
+date_format: "ordinal"
+title: 龙马的个人博客
+description: "龙马的个人博客"
+keywords: 龙马的个人博客, 龙马, 东方龙马
+timezone: Asia/Shanghai
+encoding: "utf-8"
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Longma
+github_username: fanxl
+location: Shanxi, China
+email: job.fxl@foxmail.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /categories/
+    label: 分类
+
+#  -
+#    href: /about/
+#    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+
+repository: fanxl/fanxl.github.io
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+gitalk:
+    owner: fanxl
+    repo: fanxl.github.io
+    clientID: 807289f2f7053c38b56b
+    clientSecret: 9c73b13b8123452c9fddd8eaa365106c44263d54
+
